@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>armando_description</name>
+  <version>1.0.0</version>
+  <description>This package contains the URDF description of the Armando robotic arm and a launch file for visualizing it in RViz.</description>
+  <maintainer email="l.tulino@studenti.unina.it">Luca Tulino</maintainer>
+  <author email="a.tribuzi@studenti.unina.it">Alessandro Tribuzi</author>
+  <author email="lu.meglio@studenti.unina.it">Luca Meglio</author>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
