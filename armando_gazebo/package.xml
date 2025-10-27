@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>armando_gazebo</name>
+  <version>1.0.0</version>
+  <description>Contains armando urdf and Rviz launch file</description>
+  <maintainer email="l.tulino@studenti.unina.it">Luca Tulino</maintainer>
+  <author email="a.tribuzi@studenti.unina.it">Alessandro Tribuzi</author>
+  <author email="lu.meglio@studenti.unina.it">Luca Meglio</author>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ament_cmake</depend>
+  <depend>rclpy</depend>
+  <depend>ros_gz_sim</depend>
+  <depend>gz_ros2_control</depend>
+  <depend>ros_gz_bridge</depend>
+  <depend>ros2_control</depend>
+  <depend>controller_manager</depend>
+  <depend>ros2_controllers</depend>
+  <depend>armando_description</depend>
+  <depend>xacro</depend>
+  <depend>urdf_launch</depend>
+
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

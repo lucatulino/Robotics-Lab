@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+  <xacro:macro name="armando_camera_macro" params="parent_link topic_name width height fov near far update_rate">
+    
+
+    <gazebo reference="${parent_link}">
+      <sensor name="camera" type="camera">
+        <camera>
+          <horizontal_fov>${fov}</horizontal_fov>
+          <image>
+            <width>${width}</width>
+            <height>${height}</height>
+          </image>
+          <clip>
+            <near>${near}</near>
+            <far>${far}</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>${update_rate}</update_rate>
+        <visualize>false</visualize> 
+        <topic>${topic_name}</topic>
+      </sensor>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>
+

@@ -1,0 +1,39 @@
+cmake_minimum_required(VERSION 3.8)
+project(armando_gazebo)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+
+find_package(ament_cmake REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(ros_gz_sim REQUIRED)
+find_package(armando_description REQUIRED)
+find_package(ros2_control REQUIRED)
+find_package(controller_manager REQUIRED)
+find_package(ros2_controllers REQUIRED)
+
+find_package(ros_gz_bridge REQUIRED)
+find_package(gz_ros2_control REQUIRED)
+
+find_package(xacro REQUIRED)
+find_package(urdf_launch REQUIRED)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(DIRECTORY urdf/
+  DESTINATION share/${PROJECT_NAME}/urdf
+)
+
+ament_package()
