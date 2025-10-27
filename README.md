@@ -11,16 +11,19 @@ Source your ROS 2 installation (example with Humble):
 If you haven’t initialized rosdep yet:
 
   sudo rosdep init
+  
   rosdep update
 
 Then, from the root of your workspace (ros2_ws):
 
   sudo apt update
+  
   rosdep install --from-paths src --ignore-src -r -y
 
 -----------------------Build the workspace-----------------------
 
   colcon build
+  
   source install/setup.bash
 
 ----------------------
