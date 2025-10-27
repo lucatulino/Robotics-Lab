@@ -2,6 +2,7 @@
 ----------------------
 1. Environment setup 
 ----------------------
+Clone the repository and copy the folders inside Robotic-Lab in your workspace 
 
 Source your ROS 2 installation (example with Humble):
 
