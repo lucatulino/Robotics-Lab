@@ -93,14 +93,6 @@ If after opening Gazebo with `armando_world.launch.py`, it is possible at run ti
 
   ros2 control switch_controllers --deactivate <controller_name>
   
-
-* Unload a controller and load another one (must be inactive first):
-
-  
-  ros2 control unload_controller <controller_name>
-   
-  ros2 control load_controller <new_controller_name>
-  
 ------------------------------------------------------------------
 
 Tip: Always run
