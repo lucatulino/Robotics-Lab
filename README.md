@@ -1,5 +1,4 @@
 # Robotics-Lab Homework 1
-Armando ROS2 Workspace Setup
 ================================
 
 ----------------------
