@@ -2,6 +2,7 @@
 ----------------------
 1. Environment setup 
 ----------------------
+
 Source your ROS 2 installation (example with Humble):
 
   source /opt/ros/humble/setup.bash
@@ -14,9 +15,9 @@ If you haven’t initialized rosdep yet:
   
   rosdep update
 
-Then, from the root of your workspace (ros2_ws):
-
   sudo apt update
+
+Then, from the root of your workspace (ros2_ws):
   
   rosdep install --from-paths src --ignore-src -r -y
 
