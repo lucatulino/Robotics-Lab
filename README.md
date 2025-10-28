@@ -124,5 +124,3 @@ source install/setup.bash
 
 after building your workspace with `colcon build`, and every time you open a new terminal.
 
-```
-
