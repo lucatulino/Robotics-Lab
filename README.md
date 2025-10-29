@@ -62,7 +62,7 @@ You can switch controller types by adding the argument:
 ```
 controller_type:=trajectory
 ```
-# or
+or
 ```
 controller_type:=position
 ```
@@ -86,7 +86,7 @@ You can specify the same controller type used in Gazebo:
 ```
 ros2 run armando_controller arm_controller_node --ros-args -p controller_type:=trajectory
 ```
-# or
+or
 ```
 ros2 run armando_controller arm_controller_node --ros-args -p controller_type:=position
 ```
